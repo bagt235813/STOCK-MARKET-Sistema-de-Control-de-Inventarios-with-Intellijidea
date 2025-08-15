@@ -9,7 +9,7 @@ public class ProyectoInventarioApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ProyectoInventarioApplication.class, args);
 
-		System.out.println("hola bebe");
+		System.out.println("mensaje desde el main");
 
 	}
 

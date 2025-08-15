@@ -1,9 +1,13 @@
 package com.proyectoinventario.ProyectoInventario.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+//@Entity
 public class Categoria {
 
     //atributos puede ser un enum
-
+    //Id
     private Long idCategoria;
     private String nombreCategoria;
 

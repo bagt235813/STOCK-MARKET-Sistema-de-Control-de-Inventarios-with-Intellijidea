@@ -1,9 +1,14 @@
 package com.proyectoinventario.ProyectoInventario.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Empleado {
 
     //atributos
 
+    @Id
     private Long idEmpleado;
     private String nombre;
     private String apellido;

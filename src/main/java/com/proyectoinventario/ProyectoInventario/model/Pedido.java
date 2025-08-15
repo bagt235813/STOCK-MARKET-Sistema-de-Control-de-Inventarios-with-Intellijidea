@@ -1,10 +1,16 @@
 package com.proyectoinventario.ProyectoInventario.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.util.Date;
 
+//@Entity
 public class Pedido {
 
     //atributos
+
+    //@Id
     private Long idPedido;
     private Date fechaPedido;
     private int cantidad;

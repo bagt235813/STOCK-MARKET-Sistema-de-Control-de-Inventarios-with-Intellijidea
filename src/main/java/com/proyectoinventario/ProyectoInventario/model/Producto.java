@@ -1,9 +1,13 @@
 package com.proyectoinventario.ProyectoInventario.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+//@Entity
 public class Producto {
 
     //atributo
-
+    //@Id
     private Long idProducto;
     private String nombreProducto;
     private int codigoBarras;

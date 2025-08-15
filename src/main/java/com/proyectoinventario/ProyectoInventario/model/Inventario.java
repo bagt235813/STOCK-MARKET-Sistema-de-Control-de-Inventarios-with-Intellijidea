@@ -1,11 +1,15 @@
 package com.proyectoinventario.ProyectoInventario.model;
 
-import java.util.Date;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+import java.util.Date;
+//@Entity
 public class Inventario {
 
     //atributos
 
+    //@Id
     private Long idInventario;
     private Date fechaInvetario;
     private Producto idProducto; // referencia a clase producto
