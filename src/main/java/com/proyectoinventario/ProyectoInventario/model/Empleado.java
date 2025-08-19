@@ -17,7 +17,7 @@ public class Empleado {
     private String telefono;
     private boolean estado;
     private String password;
-    private Cargo idcargo; //referencia a clase cargo, sin metodo pendiente
+    //private Cargo idcargo; //referencia a clase cargo, sin metodo pendiente
 
     //metodos getter and setter
 
@@ -85,11 +85,11 @@ public class Empleado {
         this.password = password;
     }
 
-    public Cargo getIdcargo() {
+    /*public Cargo getIdcargo() {
         return idcargo;
-    }
+    } */
 
-    public void setIdcargo(Cargo idcargo) {
+    /*public void setIdcargo(Cargo idcargo) {
         this.idcargo = idcargo;
-    }
+    } */
 }

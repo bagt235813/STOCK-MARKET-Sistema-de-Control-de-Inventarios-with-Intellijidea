@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Empleados</title>
 </head>
 <body>
+
+    <h1>Registro Empleados</h1>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Numero ydocumento</th>
+                <th>email</th>
+                <th>telefono</th>
+                <th>Estado</th>
+                <th>Password</th> <!-- NOTA PENDIENTE integrar passord de manera privada-->
+                <!--<th>cargo</th> --> <!-- NOTA PENDIENTE integrar la tabla cargo y mostrar id de la tabla -->
+                <th>Accion</th> <!-- Ejemplo del taller hacia acciones CRUD -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr th:each="empleado : ${empleados}">
+                <td th:text="${empleado.id}"></td>
+                <td th:text="${empleado.nombre}"></td>
+                <td th:text="${empleado.apellido}"></td>
+                <td th:text="${empleado.numeroDocumeto}"></td>
+                <td th:text="${empleado.email}"></td>
+                <td th:text="${empleado.telefono}"></td>
+                <td th:text="${empleado.estado}"></td>
+                <td th:text="${empleado.Password}"></td>
+                <!--<td th:text="${empleado.cargo}"></td>-->
+                <td>
+                    <a href="">Editar</a>
+                    <a href="">Eliminar</a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <a href="">Registrar Empleado</a>
 
 </body>
 </html>

@@ -9,7 +9,7 @@ public class ProyectoInventarioApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ProyectoInventarioApplication.class, args);
 
-		System.out.println("mensaje desde el main");
+		System.out.println("Corriendo servidor, mensaje desde el main");
 
 	}
 
